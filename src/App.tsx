@@ -1,5 +1,10 @@
 import "./App.css";
-import { Excalidraw, MainMenu, loadFromBlob } from "@excalidraw/excalidraw";
+import {
+  Excalidraw,
+  MainMenu,
+  WelcomeScreen,
+  loadFromBlob,
+} from "@excalidraw/excalidraw";
 import useDropboxChooser from "use-dropbox-chooser";
 import React from "react";
 import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types/types";
@@ -44,6 +49,7 @@ function App() {
           Dropbox
         </MainMenu.Item>
       </MainMenu>
+      <WelcomeScreen />
     </Excalidraw>
   );
 }

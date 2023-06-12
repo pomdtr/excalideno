@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && cp -r node_modules/@excalidraw/excalidraw/dist/excalidraw-assets api/static/excalidraw-assets",
     "serve": "cd api && deno run --watch -A main.ts",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
