@@ -7,7 +7,7 @@ import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types/types
 function App() {
   const { open } = useDropboxChooser({
     appKey: "81braykdvzmr4gq",
-    chooserOptions: { linkType: "direct" },
+    chooserOptions: { linkType: "direct", extensions: [".excalidraw"] },
     onSelected: (files) => {
       console.log(files);
     },
