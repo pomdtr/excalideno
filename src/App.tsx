@@ -25,7 +25,11 @@ function App() {
               const selected = await open();
               const blob = await fetch(selected[0].link).then((r) => r.blob());
 
-              const data = await loadFromBlob(blob, null, null);
+              const data = await loadFromBlob(
+                blob,
+                excalidrawRef.current!.getAppState(),
+                null
+              );
 
               excalidrawRef.current!.updateScene({
                 elements: data.elements,
