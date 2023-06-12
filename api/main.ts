@@ -18,7 +18,7 @@ router.get("/dynamic", (ctx) => {
   ctx.response.body = "dynamic route worked";
 });
 
-app.use(router.allowedMethods());
 app.use(router.routes());
+app.use(router.allowedMethods());
 
 app.listen({ port: 8000 });
