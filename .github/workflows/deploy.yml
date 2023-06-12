@@ -21,6 +21,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: bright-sparrow-38 # the name of the project on Deno Deploy
-          entrypoint: api/main.ts # the entrypoint to deploy
+          project: bright-sparrow-38
+          entrypoint: main.ts
           root: api
