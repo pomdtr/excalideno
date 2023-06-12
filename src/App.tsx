@@ -16,7 +16,7 @@ function App() {
   const excalidrawRef = React.useRef<ExcalidrawImperativeAPI>(null);
 
   return (
-    <Excalidraw ref={excalidrawRef}>
+    <Excalidraw ref={excalidrawRef} viewModeEnabled>
       <MainMenu>
         <MainMenu.DefaultItems.LoadScene />
         <MainMenu.Item
