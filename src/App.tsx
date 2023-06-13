@@ -23,7 +23,6 @@ function App() {
   return (
     <Excalidraw ref={excalidrawRef} viewModeEnabled>
       <MainMenu>
-        <MainMenu.DefaultItems.LoadScene />
         <MainMenu.Item
           onSelect={async () => {
             try {
@@ -46,8 +45,14 @@ function App() {
             }
           }}
         >
-          Dropbox
+          Open from Dropbox
         </MainMenu.Item>
+        <MainMenu.DefaultItems.LoadScene />
+        <MainMenu.DefaultItems.Export />
+        <MainMenu.DefaultItems.SaveAsImage />
+        <MainMenu.DefaultItems.Help />
+        <MainMenu.DefaultItems.ClearCanvas />
+        <MainMenu.Separator />
       </MainMenu>
       <WelcomeScreen />
     </Excalidraw>
