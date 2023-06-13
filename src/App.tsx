@@ -47,12 +47,11 @@ function App() {
         >
           Open from Dropbox
         </MainMenu.Item>
-        <MainMenu.DefaultItems.LoadScene />
         <MainMenu.DefaultItems.Export />
         <MainMenu.DefaultItems.SaveAsImage />
         <MainMenu.DefaultItems.Help />
-        <MainMenu.DefaultItems.ClearCanvas />
         <MainMenu.Separator />
+        <MainMenu.DefaultItems.ToggleTheme />
       </MainMenu>
       <WelcomeScreen />
     </Excalidraw>
